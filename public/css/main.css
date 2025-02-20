@@ -1,0 +1,70 @@
+/* Fontes padrões */
+/* Sora */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+* {
+    font-family: Sora;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../assets/imgs/bg-body-default.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 62px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+input {
+    min-width: 250px;
+    font-size: large;
+    height: 2rem;
+    padding: 1rem 1rem;
+    background-color: #F3F4F6;
+    border: #A4CAFE solid thin;
+    border-radius: 12px;
+    outline-color: dodgerblue;
+    margin: 10px 0;
+    opacity: 0.6;
+    transition: linear 0.5s;
+}
+
+input:hover {
+    opacity: 1;
+}
+
+button {
+    color: white;
+    min-width: 200px;
+    height: 4rem;
+    font-size: 24px;
+    font-weight: 600;
+    background-image: url(../assets/buttons/bg-button.png);
+    background-size: cover;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: linear 0.5s;
+    opacity: 0.8;
+    outline-color: dodgerblue;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.size-1 {
+    font-size: 18px;
+}
+
+.weight-1 {
+    font-weight: 500;
+}
