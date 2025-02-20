@@ -1,6 +1,5 @@
 @media (orientation: landscape) {
     main {
-        /* border: solid red; */
         width: 60%;
         height: 100vh;
         display: flex;
@@ -28,8 +27,15 @@
         height: 100%;
         background-size: cover;
         background-position: center;
-        background-image: url(../assets/imgs/img-hero-cadastro.png);
         border-radius: 16px;
+    }
+    
+    .img-cadastro {
+        background-image: url(../assets/imgs/img-hero-cadastro.png);
+    }
+
+    .img-login {
+        background-image: url(../assets/imgs/img-hero-login.png);
     }
 
     .box-informacoes {
@@ -62,6 +68,7 @@
     .botoes {
         display: flex;
         justify-content: space-between;
+        margin-top: 10px;
     }
 
     .btn-continuar {
