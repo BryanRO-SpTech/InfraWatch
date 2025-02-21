@@ -1,0 +1,8 @@
+main {
+    border: solid;
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;   
+}
