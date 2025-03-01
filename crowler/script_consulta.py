@@ -1,9 +1,9 @@
 import mysql.connector
 
 mydb = mysql.connector.connect(
-    host="localhost",
+    host="10.18.32.14",
     user="infrawatch-select",
-    password="",  # Não esqueça de preencher com a senha do banco utilizado
+    password="Urubu100",  # Não esqueça de preencher com a senha do banco utilizado
     database="monitor"
 )
 
