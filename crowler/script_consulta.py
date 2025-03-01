@@ -3,7 +3,7 @@ import mysql.connector
 mydb = mysql.connector.connect(
     host="localhost",
     user="infrawatch-select",
-    password="Urubu100",  # Não esqueça de preencher com a senha do banco utilizado
+    password="",  # Não esqueça de preencher com a senha do banco utilizado
     database="monitor"
 )
 
