@@ -1,4 +1,5 @@
 import mysql.connector
+import time
 
 mydb = mysql.connector.connect(
     host="10.18.32.14",
