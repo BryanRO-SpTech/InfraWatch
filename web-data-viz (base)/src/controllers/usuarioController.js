@@ -6,9 +6,9 @@ function autenticar(req, res) {
     var senha = req.body.senhaServer;
 
     if (email == undefined) {
-        res.status(400).send("Seu email está undefined!");
+        res.status(400).send("Seu email está Indefinido!");
     } else if (senha == undefined) {
-        res.status(400).send("Sua senha está indefinida!");
+        res.status(400).send("Sua senha está Indefinida!");
     } else {
 
         usuarioModel.autenticar(email, senha)
@@ -48,7 +48,6 @@ function autenticar(req, res) {
                 }
             );
     }
-
 }
 
 function cadastrar(req, res) {
@@ -60,13 +59,13 @@ function cadastrar(req, res) {
 
     // Faça as validações dos valores
     if (nome == undefined) {
-        res.status(400).send("Seu nome está undefined!");
+        res.status(400).send("Seu nome está Indefinido!");
     } else if (email == undefined) {
-        res.status(400).send("Seu email está undefined!");
+        res.status(400).send("Seu email está Indefinido!");
     } else if (senha == undefined) {
-        res.status(400).send("Sua senha está undefined!");
+        res.status(400).send("Sua senha está Indefinida!");
     } else if (fkEmpresa == undefined) {
-        res.status(400).send("Sua empresa a vincular está undefined!");
+        res.status(400).send("Sua empresa a vincular está Indefinida!");
     } else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
@@ -79,9 +78,7 @@ function cadastrar(req, res) {
                 function (erro) {
                     console.log(erro);
                     console.log(
-                        "\nHouve um erro ao realizar o cadastro! Erro: ",
-                        erro.sqlMessage
-                    );
+                        "\nHouve um erro ao realizar o cadastro! Erro: ", erro.sqlMessage);
                     res.status(500).json(erro.sqlMessage);
                 }
             );
